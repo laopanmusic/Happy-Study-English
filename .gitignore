@@ -1,0 +1,9 @@
+# Ignore common development files
+.DS_Store
+*.log
+node_modules/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
