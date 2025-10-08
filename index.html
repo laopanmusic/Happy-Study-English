@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快乐学英语 - 单词配对游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 快乐学英语 - 单词配对游戏 🎮</h1>
+            <div class="info-bar">
+                <div class="score-display">
+                    <span class="label">得分:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="level-display">
+                    <span class="label">等级:</span>
+                    <span id="level">1</span>
+                </div>
+                <div class="grade-selector">
+                    <label for="grade">年级:</label>
+                    <select id="grade">
+                        <option value="3">三年级</option>
+                        <option value="4">四年级</option>
+                        <option value="5">五年级</option>
+                        <option value="6">六年级</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-board" id="gameBoard">
+            <!-- Game tiles will be generated here by JavaScript -->
+        </div>
+
+        <div class="controls">
+            <button id="newGameBtn" class="btn btn-primary">开始新游戏</button>
+            <button id="restartBtn" class="btn btn-secondary">重新开始</button>
+        </div>
+
+        <div class="instructions">
+            <h3>游戏说明:</h3>
+            <ul>
+                <li>点击两张卡片，找到英文单词和对应的中文翻译</li>
+                <li>配对成功将获得10分</li>
+                <li>完成所有配对后进入下一关</li>
+                <li>选择不同年级可以练习不同难度的单词</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
